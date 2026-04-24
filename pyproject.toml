@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.24.2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi-mcp-docs"
+version = "0.1.0"
+description = "Embedded MCP (FastMCP) documentation UI for FastAPI apps."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "fastapi-mcp-docs contributors" }]
+dependencies = [
+  "fastapi>=0.110",
+  "pydantic>=2.0",
+  "starlette>=0.36",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4", "httpx>=0.26"]
+example = ["uvicorn>=0.23"]
+
+[project.urls]
+Homepage = "https://github.com/valenti1234/fastapi-mcp-docs"
+Repository = "https://github.com/valenti1234/fastapi-mcp-docs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fastapi_mcp_docs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
