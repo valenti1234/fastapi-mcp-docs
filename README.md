@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-%3E%3D3.9-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.110-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![CI](https://github.com/valenti1234/fastapi-mcp-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/valenti1234/fastapi-mcp-docs/actions/workflows/ci.yml)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-valenti1234%2Ffastapi--mcp--docs-181717.svg?logo=github&logoColor=white)](https://github.com/valenti1234/fastapi-mcp-docs)
 
 Embed an interactive MCP documentation UI inside a FastAPI app (inspired by MCP Inspector), mounted at `/mcp-docs`.
@@ -60,3 +61,12 @@ python -m uvicorn examples.app:app --reload
 ```
 
 Then open `http://localhost:8000/mcp-docs`.
+
+## Publishing to PyPI
+
+This repository includes an automatic publishing workflow that runs on GitHub Releases.
+
+- Create a new GitHub Release (e.g. `v0.1.0`) and the workflow will build and publish to PyPI.
+- Configure one of the following:
+  - Trusted Publishing (recommended): enable GitHub Actions trusted publishing for the `fastapi-mcp-docs` project on PyPI.
+  - API token: add `PYPI_API_TOKEN` as a repository secret.
