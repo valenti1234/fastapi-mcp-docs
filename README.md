@@ -1,5 +1,10 @@
 # fastapi-mcp-docs
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.9-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.110-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-valenti1234%2Ffastapi--mcp--docs-181717.svg?logo=github&logoColor=white)](https://github.com/valenti1234/fastapi-mcp-docs)
+
 Embed an interactive MCP documentation UI inside a FastAPI app (inspired by MCP Inspector), mounted at `/mcp-docs`.
 
 ## Install
